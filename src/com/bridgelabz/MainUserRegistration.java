@@ -8,5 +8,7 @@ public class MainUserRegistration {
         userRegistration.checkLastNameIsCorrect();
         System.out.println("-----------------------------------");
         userRegistration.checkEmailIsCorrect();
+        System.out.println("-----------------------------------");
+        userRegistration.checkMobileNumberFormatIsCorrect();
     }
 }

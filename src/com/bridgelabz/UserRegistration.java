@@ -46,4 +46,17 @@ public class UserRegistration {
         else
             System.out.println("Please Enter a Valid Last name\n EmailId should be like abc@bl.co.in\n");
     }
+
+    //check the mobile number format is correct
+    public void checkMobileNumberFormatIsCorrect(){
+        Scanner mb = new Scanner(System.in);
+        System.out.print("Enter the Mobile number with country code(91): " );
+        String mobileNumber = "^91\\s[6789][0-9]{9}";
+        mobileNumber = mb.nextLine();
+        boolean check = Pattern.matches("^91\\s[6789][0-9]{9}", mobileNumber);
+        if (check)
+            System.out.println("Mobile Number format is correct");
+        else
+            System.out.println("Please Enter a Valid Mobile Num\nMobile number format should be 91 9533182605");
+    }
 }
