@@ -6,5 +6,7 @@ public class MainUserRegistration {
         userRegistration.checkFirstNameIsCorrect();
         System.out.println("-----------------------------------");
         userRegistration.checkLastNameIsCorrect();
+        System.out.println("-----------------------------------");
+        userRegistration.checkEmailIsCorrect();
     }
 }
