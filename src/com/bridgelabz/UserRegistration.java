@@ -20,4 +20,17 @@ public class UserRegistration {
         else
             System.out.println("Please Enter a Valid First name\n FirstName should have Start with only one Capital\n");
     }
+
+    //Create method to check the last is correct
+    public static void checkLastNameIsCorrect() {
+        String lastName = "^[a-zA-Z][a-zA-Z ]*$";
+        Scanner ln = new Scanner(System.in);
+        System.out.println("Enter the FirstName : ");
+        lastName = ln.next();
+        boolean check = Pattern.matches("^[A-Z]{1}+[a-z]{3,}+$", lastName);
+        if (check)
+            System.out.println("LastName is correct");
+        else
+            System.out.println("Please Enter a Valid Last name\n LastName should have Start with only one Capital\n");
+    }
 }
