@@ -10,5 +10,7 @@ public class MainUserRegistration {
         userRegistration.checkEmailIsCorrect();
         System.out.println("-----------------------------------");
         userRegistration.checkMobileNumberFormatIsCorrect();
+        System.out.println("-----------------------------------");
+        userRegistration.checkPasswordHave8MinimumCharacter();
     }
 }

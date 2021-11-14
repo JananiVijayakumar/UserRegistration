@@ -59,4 +59,17 @@ public class UserRegistration {
         else
             System.out.println("Please Enter a Valid Mobile Num\nMobile number format should be 91 9533182605");
     }
+
+    //check the password is minimum 8 character
+    public void checkPasswordHave8MinimumCharacter(){
+        Scanner pw = new Scanner(System.in);
+        System.out.print("Enter password :  ");
+        String passWord = "[a-zA-Z]{8,}";
+        passWord = pw.nextLine();
+        boolean check = Pattern.matches("[a-zA-Z]{8,}", passWord);
+        if (check)
+            System.out.println("Password is correct");
+        else
+            System.out.println("Please Enter a Valid password\npassword should have minimum 8 characters");
+    }
 }
