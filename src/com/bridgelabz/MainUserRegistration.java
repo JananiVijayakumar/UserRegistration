@@ -19,6 +19,14 @@ public class MainUserRegistration {
         System.out.println("-----------------------------------");
         userRegistration.checkPasswordHaveOneSpecialCharacter();
         System.out.println("-----------------------------------");
-        userRegistration.checkTheEmailIsCorrect();
+        userRegistration.checkTheEmailIsCorrect("abc@yahoo.com");
+        userRegistration.checkTheEmailIsCorrect("abc-100@yahoo.com");
+        userRegistration.checkTheEmailIsCorrect("abc.100@yahoo.com");
+        userRegistration.checkTheEmailIsCorrect("abc111@abc.com");
+        userRegistration.checkTheEmailIsCorrect("abc-100@abc.net");
+        userRegistration.checkTheEmailIsCorrect("abc.100@abc.com.au");
+        userRegistration.checkTheEmailIsCorrect("abc@1.com");
+        userRegistration.checkTheEmailIsCorrect("abc@gmail.com.com");
+        userRegistration.checkTheEmailIsCorrect("abc+100@gmail.com.com");
     }
 }
