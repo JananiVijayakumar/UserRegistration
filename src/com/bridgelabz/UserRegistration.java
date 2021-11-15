@@ -108,4 +108,16 @@ public class UserRegistration {
         else
             System.out.println("Please Enter a Valid password\npassword should have minimum 8 characters\npassword should have one uppercase\npassword should have one Numeric value\npassword should have one Special character");
     }
+
+    public void checkTheEmailIsCorrect(){
+        Scanner email = new Scanner(System.in);
+        System.out.print("Enter your EmailID :  ");
+        String emailId = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9+.-]+$";
+        emailId = email.nextLine();
+        boolean check = Pattern.matches("^[a-zA-Z0-9+@#$%^&*';:~`!_.-]+@[a-zA-Z0-9+.-]+.[com]$", emailId);
+        if (check)
+            System.out.println("EmailId is valid!!");
+        else
+            System.out.println("Please Enter a Valid EmailId");
+    }
 }
