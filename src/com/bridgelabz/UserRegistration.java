@@ -84,4 +84,16 @@ public class UserRegistration {
         else
             System.out.println("Please Enter a Valid password\npassword should have minimum 8 characters\npassword should have one uppercase");
     }
+
+    public void checkPasswordHaveOneNumericValue(){
+        Scanner pw2 = new Scanner(System.in);
+        System.out.print("Enter password with one Numeric :  ");
+        String passWord = "^(?=.*[a-z])"+"(?=.*[A-Z]).{8,}$";
+        passWord = pw2.nextLine();
+        boolean check = Pattern.matches("^(?=.*[a-z])"+"(?=.*[A-Z]).{8,}$", passWord);
+        if (check)
+            System.out.println("Password is correct");
+        else
+            System.out.println("Please Enter a Valid password\npassword should have minimum 8 characters\npassword should have one uppercase\npassword should have one Numeric value");
+    }
 }

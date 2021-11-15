@@ -14,5 +14,7 @@ public class MainUserRegistration {
         userRegistration.checkPasswordHave8MinimumCharacter();
         System.out.println("-----------------------------------");
         userRegistration.checkPasswordHaveOneUpperCase();
+        System.out.println("-----------------------------------");
+        userRegistration.checkPasswordHaveOneNumericValue();
     }
 }
