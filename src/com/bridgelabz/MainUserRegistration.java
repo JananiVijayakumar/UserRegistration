@@ -16,5 +16,7 @@ public class MainUserRegistration {
         userRegistration.checkPasswordHaveOneUpperCase();
         System.out.println("-----------------------------------");
         userRegistration.checkPasswordHaveOneNumericValue();
+        System.out.println("-----------------------------------");
+        userRegistration.checkPasswordHaveOneSpecialCharacter();
     }
 }
