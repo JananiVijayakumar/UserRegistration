@@ -64,12 +64,24 @@ public class UserRegistration {
     public void checkPasswordHave8MinimumCharacter(){
         Scanner pw = new Scanner(System.in);
         System.out.print("Enter password :  ");
-        String passWord = "[a-zA-Z]{8,}";
+        String passWord = "[a-zA-Z]{7,}";
         passWord = pw.nextLine();
-        boolean check = Pattern.matches("[a-zA-Z]{8,}", passWord);
+        boolean check = Pattern.matches("[a-zA-Z]{7,}", passWord);
         if (check)
             System.out.println("Password is correct");
         else
             System.out.println("Please Enter a Valid password\npassword should have minimum 8 characters");
+    }
+
+    public void checkPasswordHaveOneUpperCase(){
+        Scanner pw1 = new Scanner(System.in);
+        System.out.print("Enter password with one uppercase :  ");
+        String passWord = "^[a-z+A-Z]{7,}";
+        passWord = pw1.nextLine();
+        boolean check = Pattern.matches("^[a-z+A-Z]{7,}", passWord);
+        if (check)
+            System.out.println("Password is correct");
+        else
+            System.out.println("Please Enter a Valid password\npassword should have minimum 8 characters\npassword should have one uppercase");
     }
 }
