@@ -12,5 +12,7 @@ public class MainUserRegistration {
         userRegistration.checkMobileNumberFormatIsCorrect();
         System.out.println("-----------------------------------");
         userRegistration.checkPasswordHave8MinimumCharacter();
+        System.out.println("-----------------------------------");
+        userRegistration.checkPasswordHaveOneUpperCase();
     }
 }
