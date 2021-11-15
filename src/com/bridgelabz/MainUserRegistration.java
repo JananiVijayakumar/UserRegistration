@@ -18,5 +18,7 @@ public class MainUserRegistration {
         userRegistration.checkPasswordHaveOneNumericValue();
         System.out.println("-----------------------------------");
         userRegistration.checkPasswordHaveOneSpecialCharacter();
+        System.out.println("-----------------------------------");
+        userRegistration.checkTheEmailIsCorrect();
     }
 }
